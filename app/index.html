@@ -13,6 +13,7 @@
 </head>
 <body>
 <!--  stuff goes here -->
+<h1>HI</h1>
 
 <p>First name: <strong data-bind="text: firstName">todo</strong></p>
 <p>Last name: <strong data-bind="text: lastName">todo</strong></p>
@@ -24,6 +25,13 @@
 
 <button data-bind="click: capitalizeLastName">Go caps</button>
 
+<hr>
+Search: <input data-bind="textInput: filter" />
+<table>
+  <tbody data-bind="foreach: filteredItems">
+    <tr><td data-bind="text: $data"></td></tr>
+  </tbody>
+</table>
 <!--- end of stuff -->
 <script type="text/javascript">
 
