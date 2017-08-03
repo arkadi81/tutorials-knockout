@@ -2,7 +2,7 @@
 /*jshint esversion: 6 */
 'use strict';
 
-$(function() { // the wrapper is super important - binding wont work before dom is loaded
+jQuery(document).ready(function() { // the wrapper is super important - binding wont work before dom is loaded
   function AppViewModel() {
     this.firstName = ko.observable("Bert");
     this.lastName = ko.observable("Bertington");
